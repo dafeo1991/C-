@@ -58,7 +58,7 @@ else
 
 /*Задача 4 Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.*/
 
-Console.WriteLine("Input numberN");
+/*Console.WriteLine("Input numberN");
 int numN = Convert.ToInt32(Console.ReadLine());
 int num2 = 2;
 int count = 0 + num2;
@@ -66,6 +66,6 @@ while (count <= numN)
 {
     Console.WriteLine(count);
     count+=2;
-}
+}*/
 
 
