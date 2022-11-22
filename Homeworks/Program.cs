@@ -16,27 +16,19 @@ else
 
 /*Задача2 Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.*/
 
-/*Console.WriteLine("Input number 1");
-int num1 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input number 2");
-int num2 = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Input number 3");
-int num3 = Convert.ToInt32(Console.ReadLine());
-int max = num1;
-while (max < num2)
-{
-max=num2;
-}
-    if (max < num3)
-    {
-        max=num3;
-        Console.WriteLine($"{max} -> number Max");
-    }
-    else
-    {
-        Console.WriteLine($"{max} -> number Max");
-    }*/
+/*Console.WriteLine("Input number a");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input number b");
+int b = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Input number c");
+int c = Convert.ToInt32(Console.ReadLine());
+int max = a;
 
+if (b > max) max = b;
+if (c > max) max = c;
+
+Console.Write("max = ");
+Console.WriteLine(max);*/
 
 /*Задача3  Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка). */
 
