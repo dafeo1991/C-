@@ -17,6 +17,7 @@ Console.WriteLine($"New version of {random} is {sot2}");*/
 /*Задание 2
 Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.*/
 
+
 /*Console.WriteLine("Input number");
 int num = Convert.ToInt32(Console.ReadLine());
 string num2 = Convert.ToString(num);
