@@ -3,13 +3,13 @@
 // int Num (int A, int B)
 // {   
 //     int i = 1;
-//     int sum = A;
+//     int NaturalDegree = A;
 //     while (i < B)
 //     {
-//          sum =  sum * A;
+//          NaturalDegree =  NaturalDegree * A;
 //          i++;
 //     }
-//     return sum;
+//     return NaturalDegree;
 // }
 
 // Console.WriteLine("Iptum number A");
