@@ -21,17 +21,17 @@ Console.WriteLine($"The biggest digit -> {result}");*/
 
 // Вывести случайное число и удалить вторую цифру
 
-/*int CutNumber (int num)
-{
-    int ed = num % 10;
-    int sot = num / 100;
-    int res = sot * 10 + ed;
-    return res;
-}
+// int CutNumber (int num)
+// {
+//     int ed = num % 10;
+//     int sot = num / 100;
+//     int res = sot * 10 + ed;
+//     return res;
+// }
 
-int random = new Random().Next(100, 1000);
-int NewNumber = CutNumber(random);
-Console.WriteLine($"New version of {random} is {NewNumber}");*/
+// int random = new Random().Next(100, 1000);
+// int NewNumber = CutNumber(random);
+// Console.WriteLine($"New version of {random} is {NewNumber}");
 
 // Принимает два числа и проверяет кратно ли второе число первому
 
