@@ -168,3 +168,111 @@
 // Show2DArray(array);
 // Console.WriteLine(New2(array));
 
+// Задайте двумерный массив, найти элементы у которых оба индекса четные и заменить их на квадраты
+// int[,] Create2DRandomArray(int minValue, int maxValue, int rows, int columns)
+// {
+//     int[,] newArray = new int[rows, columns];
+//     for (int i = 0; i < rows; i++)
+//     {
+//         for (int j = 0; j < columns; j++)
+//         {
+//             newArray[i, j] = new Random().Next(minValue, maxValue + 1);
+//         }
+//     }
+//     return newArray;
+// }
+
+// void Show2DArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+//     Console.WriteLine();
+// }
+// void N (int[,] array)
+// {
+    
+//      for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {   
+            
+//             if ( i % 2 == 0 &&  j % 2 == 0)
+//             Console.Write(array[i, j] * array[i, j] +  " ");
+//             else Console.Write(array[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+
+// }
+
+// Console.WriteLine("Введите количество строк ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите количество столбцов ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите минимальное число ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите максимальное число ");
+// int max = Convert.ToInt32(Console.ReadLine());
+// int [,] array = Create2DRandomArray(min, max, rows, columns); 
+// Show2DArray(array);
+// N(array);
+
+//Задача 4. Задайте двумерный массив. Найдите сумму элементов, находящихся на главной диагонали (с индексами (0,0); (1;1) и т.д.
+
+int[,] Create2DRandomArray(int minValue, int maxValue, int rows, int columns)
+{
+    int[,] newArray = new int[rows, columns];
+    for (int i = 0; i < rows; i++)
+    {
+        for (int j = 0; j < columns; j++)
+        {
+            newArray[i, j] = new Random().Next(minValue, maxValue + 1);
+        }
+    }
+    return newArray;
+}
+
+void Show2DArray(int[,] array)
+{
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            Console.Write(array[i, j] + " ");
+        }
+        Console.WriteLine();
+    }
+   Console.WriteLine();
+}
+
+int Sum(int[,] array)
+{
+    int sum = 0;
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            if (i == j)
+            sum = sum + array[i, j];
+        }
+
+    }
+    return sum;
+}
+Console.WriteLine("Введите количество строк ");
+int rows = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите количество столбцов ");
+int columns = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите минимальное число ");
+int min = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine("Введите максимальное число ");
+int max = Convert.ToInt32(Console.ReadLine());
+int[,] array = Create2DRandomArray(min, max, rows, columns); 
+Show2DArray(array);
+Console.WriteLine(Sum(array));

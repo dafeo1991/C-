@@ -20,7 +20,7 @@
 //     //Console.WriteLine();
 // }
 
-// //замены эл массива положительные на отриц и наоборот
+// // //замены эл массива положительные на отриц и наоборот
 
 // int [] InvertArray (int[] array)
 // {
@@ -131,3 +131,92 @@
 // int [] newArray = New (size);
 // ShowArray(newArray);
 // FindNumber(newArray);
+
+
+
+
+
+// string[] New(int size)
+// {
+    
+//     string[] newArray = new string[size];    
+//     for (int i = 0; i < size; i++)
+//     {   
+        
+//         Console.WriteLine($"Введите элемент{i + 1} ");
+//         newArray[i] = Console.ReadLine();
+//     }
+//     return newArray;
+// }
+// void ShowArray(string[] array)
+// {
+//     Console.Write("Получившийся массив -> ");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+//     Console.WriteLine();
+// }
+
+// void N(string[] array)
+// {   
+//     int count = 0;
+//     Console.Write("Получившийся новый массив -> ");
+//     for (int i = 0; i < array.Length; i++)
+//     {   
+        
+//         if (array[i].Length < 4)
+//         {
+//             Console.Write(array[i] + " ");
+//             count++;            
+//         }
+        
+//     }
+
+// }
+
+// Console.WriteLine("Введите размер массива");
+// int size = Convert.ToInt32(Console.ReadLine());
+// string[] newArray = New(size);
+// ShowArray(newArray);
+// N(newArray);
+
+//Найдите разницу между максимальным и минимальным элементов массива
+
+int [] N1 (int size)
+{
+    int [] newArray = new int [size];
+    for (int i = 0; i < size; i++)
+    {
+        newArray[i] = new Random().Next(100,1000);
+    }
+    return newArray;
+}
+void N2 (int [] array)
+{
+    Console.Write("Новый массив -> ");
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+    Console.WriteLine();
+}
+void N3 (int [] array)
+{
+    int max = array[0];
+    int min = array[0];
+    
+    for (int i = 0; i < array.Length; i++)
+    {
+        if (array[i] < min) min = array[i];
+        if (array[i] > max) max = array[i];
+               
+    }
+     int res = max - min;
+    Console.WriteLine($"Максимальный элемент -> {max}, минимальный элемент -> {min}, разница между ними -> {res}");
+}
+Console.WriteLine("Введите размер массива");
+int n = Convert.ToInt32(Console.ReadLine());
+int [] myArray = N1(n);
+N2(myArray);
+N3(myArray);

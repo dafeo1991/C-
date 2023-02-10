@@ -36,6 +36,46 @@
 // ShowArray(myArray);
 // Sum(myArray);
 
+// int[] N1 (int size)
+// {
+//     int [] newArray = new int [size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         Console.WriteLine($"Введите элемент массива № {i + 1} ");
+//         newArray[i] = Convert.ToInt32(Console.ReadLine());
+
+//     }
+//     return newArray;
+// }
+// void N2 (int [] array)
+// {
+//     Console.Write("Получившийся массив-> ");
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         Console.Write(array[i] + " ");
+//     }
+// }
+// int N3 (int[] array)
+// {   
+    
+//     int count = 0;
+    
+//     for (int i = 0; i < array.Length; i++)
+//     {
+//         if (array[i] > 0) count++;
+//     }
+//     Console.WriteLine($"Количество чисел > 0 -> {count}");
+//     return count;
+    
+// }
+// Console.WriteLine("Введите количество элементов");
+// int a = Convert.ToInt32(Console.ReadLine());
+// int [] array2 = N1(a);
+// N2(array2);
+// N3(array2);
+
+
+
 //  Напишите программу, которая найдёт точку пересечения двух прямых, заданных уравнениями y = k1 * x + b1, y = k2 * x + b2; значения b1, k1, b2 и k2 задаются пользователем.
 //Способ 2
 

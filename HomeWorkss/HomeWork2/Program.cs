@@ -31,6 +31,33 @@ else
 }*/
 
 
+// void Num(int num)
+// {
+//     if (num >= 1000 && num < 10000)
+//     {
+//         int r = num % 100;
+//         int res = r / 10;
+//         Console.WriteLine($"Третья цифра -> {res}");
+//     }
+//     if (num >= 100 && num < 1000)
+//     {
+//         int res = num % 10;
+//         Console.WriteLine($"Третья цифра -> {res}");
+//     }
+//     if (num <100)
+//     {
+//         Console.WriteLine($"Третьей цифры нет");
+//     }
+//     if (num >= 10000)
+//     {
+//          Console.WriteLine($"Введите число меньше 10000");
+//     }
+
+// }
+
+// Console.WriteLine($"Введите число -> ");
+// int m = Convert.ToInt32(Console.ReadLine());
+// Num(m);
 
 
 //Задача 3  Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.

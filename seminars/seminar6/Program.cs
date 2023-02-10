@@ -31,6 +31,7 @@
 //     }
 //     return array;
 // }
+
 // Console.WriteLine("Введите размер массива");
 // int a = Convert.ToInt32(Console.ReadLine());
 // Console.WriteLine("Введите минимальное значение");
@@ -98,18 +99,19 @@
 
 // преобразовать десятичное число в двоичное
 
-// string Transform(int num)
-// {
-//     string result = String.Empty;
-//     int bin;
-//     while (num > 0)
-//     {
-//         bin = num % 2;
-//         result = bin + result;
-//         num = num / 2;
-//     }
-//     return result;
-// }
-// Console.WriteLine("Введите число ");
-// int a = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine(Transform(a));
+string Transform(int num)
+{
+    string result = String.Empty;
+    int bin;
+    while (num > 0)
+    {
+        bin = num % 2;
+        result = bin + result;
+        num = num / 2;
+    }
+    return result;
+}
+Console.WriteLine("Введите число ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.WriteLine(Transform(a));
+

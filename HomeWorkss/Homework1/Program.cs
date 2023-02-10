@@ -57,6 +57,17 @@ Console.WriteLine(max);*/
 // }
 // Console.WriteLine(1549 % 2);
 
+// Console.WriteLine("Input number 1");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// if (num1 % 2 == 0 )
+// {
+//     Console.WriteLine("Число четное");
+// }
+// else
+// {
+//     Console.WriteLine("Число нечетное");
+// }
+
 /*Задача 4 Напишите программу, которая на вход принимает число (N), а на выходе показывает все чётные числа от 1 до N.*/
 
 /*Console.WriteLine("Input numberN");
@@ -68,6 +79,16 @@ while (count <= numN)
     Console.WriteLine(count);
     count+=2;
 }*/
+
+// Console.WriteLine("Input number 1");
+// int num1 = Convert.ToInt32(Console.ReadLine());
+// int count = 2;
+// while (count < num1)
+// {
+//     Console.WriteLine(count);
+//     count +=2;
+    
+// }
 
 
 

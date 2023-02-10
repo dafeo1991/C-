@@ -36,20 +36,20 @@ Method2("Text sms");*/
 
 //4. что то принимают и что то возвращают
 
-// string Method4 (int count, string text)
-// {
-//     int i = 0;
-//     string result = String.Empty;
-//     while (i < count)
-//     {
-//         result = result + text;
-//         i++;
-//     }
-//     return result;
-// }
+string Method4 (int count, string text)
+{
+    int i = 0;
+    string result = String.Empty;
+    while (i < count)
+    {
+        result = result + text;
+        i++;
+    }
+    return result;
+}
 
-// string res = Method4(10, "asdf");
-// Console.WriteLine(res);
+string res = Method4(10, "asdf" + " ");
+Console.WriteLine(res);
 
 // 5. Цикл со счетчиком
 // string Method4 (int count, string text)

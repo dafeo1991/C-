@@ -21,6 +21,21 @@
 // int N = Convert.ToInt32(Console.ReadLine());
 // Number (N);
 
+//void Num (int n)
+// {
+//     if (n % 10 == n / 10000 && n % 100 / 10 == n / 1000 % 10  )
+//     {
+//         Console.WriteLine("это число палиндром");
+//     }
+//     else
+//     {
+//         Console.WriteLine("это число не палиндром");
+//     }
+// }
+//  Console.WriteLine("введите число");
+//  int num = Convert.ToInt32(Console.ReadLine());
+//  Num(num);
+
 // Задача 2
 // на вход координаты двух точек и находит расстояние между ними в 3D пространстве
 
@@ -56,4 +71,16 @@
 // Console.WriteLine("Введите число N");
 // int N = Convert.ToInt32(Console.ReadLine());
 // Qwerty (N);
+
+// void N3 (int n)
+// {   
+//     Console.WriteLine($"Таблица кубов чисел -> {n} ");
+//     for (int i = 1; i <=n; i++)
+//     {
+//         Console.WriteLine(i +"->"+ i*i*i);
+//     }
+// }
+// Console.WriteLine("Введите N");
+// int num = Convert.ToInt32(Console.ReadLine());
+// N3(num);
 

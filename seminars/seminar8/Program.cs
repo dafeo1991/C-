@@ -150,7 +150,7 @@ void Show2DArray (int[,] array)
         }
         Console.WriteLine();
     }
-  
+
 }
 int [,] FindMin (int [,] array)
 {
@@ -173,12 +173,12 @@ int [,] FindMin (int [,] array)
     {
         array[i, columns] = 0;
     }
-    
+
     for (int j = 0; j < array.GetLength(1); j++)
     {
         array[row, j] = 0;
     }
-    
+
     return array;
 }
 Console.WriteLine("Введите количество строк ");
@@ -195,3 +195,81 @@ Show2DArray(myArray);
 Console.WriteLine();
 myArray = FindMin(myArray);
 Show2DArray(myArray);
+
+//  int[,] Create2DRandomArray(int minValue, int maxValue, int rows, int columns)
+// {
+//     int[,] newArray = new int[rows, columns];
+//     for (int i = 0; i < rows; i++)
+//     {
+//         for (int j = 0; j < columns; j++)
+//         {
+//             newArray[i, j] = new Random().Next(minValue, maxValue + 1);
+//         }
+//     }
+//     return newArray;
+// }
+
+// void Show2DArray(int[,] array)
+// {
+//     for (int i = 0; i < array.GetLength(0); i++)
+//     {
+//         for (int j = 0; j < array.GetLength(1); j++)
+//         {
+//             Console.Write(array[i, j] + " ");
+//         }
+//         Console.WriteLine();
+//     }
+//   Console.WriteLine();
+// }
+
+// // int[,] N(int [,] array, int row1, int row2)
+// // {
+// //     if (row1 > array.GetLength(0) || row2>array.GetLength(0))
+// //     return array;
+// //     else
+// //     {   
+// //         for (int j = 0; j < array.GetLength(1); j++)
+// //         {         
+// //         int temp = array[row1,j];
+// //         array[row1, j] = array[row2,j];
+// //         array[row2,j] = temp;
+// //         }
+// //     }
+// //     return array;
+// // }
+
+// int [,] N (int [,] array)
+// {
+//     if (array.GetLength(0) != array.GetLength(1))
+//     // return array;
+//     else
+//     {
+//         for (int i = 0; i < array.GetLength(0) -1; i++)
+//     {
+//         for (int j = i + 1; j < array.GetLength(0); j++)
+//         {
+//             int temp = array[i,j];
+//             array[i,j] = array[j,i];
+//             array[j,i] = temp;
+//         }
+//     }
+//     }
+//     return array;
+// }
+//  Console.WriteLine("Введите количество строк ");
+// int rows = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите количество столбцов ");
+// int columns = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите минимальное число ");
+// int min = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine("Введите максимальное число ");
+// int max = Convert.ToInt32(Console.ReadLine());
+// // Console.WriteLine("Введите номер первой строки ");
+// // int r1 = Convert.ToInt32(Console.ReadLine());
+// // Console.WriteLine("Введите номер второй строки ");
+// // int r2 = Convert.ToInt32(Console.ReadLine());
+// int [,] myArray = Create2DRandomArray(min, max, rows, columns);
+// Show2DArray(myArray);
+// myArray = N(myArray);
+// Show2DArray(myArray);
+

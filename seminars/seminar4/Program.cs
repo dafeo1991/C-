@@ -87,3 +87,32 @@
 // int max = Convert.ToInt32(Console.ReadLine());
 // int[] myArray = CreateRandomArray(a, min, max);
 // ShowArray(myArray);
+
+//  Напишите программу, которая задаёт массив из 8 элементов и выводит их на экран.
+
+
+int[] N(int size)
+{
+    int[] newArray = new int[size];
+    {
+        for (int i = 0; i < size; i++)
+        {
+            newArray[i] = new Random().Next(0, 100);
+        }
+    }
+    return newArray;
+}
+
+void N2(int[] array)
+{
+    Console.Write("Новый массив -> ");
+
+    for (int i = 0; i < array.Length; i++)
+    {
+        Console.Write(array[i] + " ");
+    }
+}
+Console.WriteLine("Введите длинну массива");
+int f = Convert.ToInt32(Console.ReadLine());
+int [] myArray = N(f);
+N2(myArray);

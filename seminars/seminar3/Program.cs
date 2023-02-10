@@ -61,3 +61,7 @@
 // Console.WriteLine("Input number N");
 // int N = Convert.ToInt32(Console.ReadLine());
 // Qwerty (N);
+
+
+
+
