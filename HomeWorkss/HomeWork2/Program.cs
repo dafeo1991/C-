@@ -18,18 +18,19 @@ Console.WriteLine($"New version of {random} is {sot2}");*/
 Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.*/
 
 
-/*Console.WriteLine("Input number");
-int num = Convert.ToInt32(Console.ReadLine());
-string num2 = Convert.ToString(num);
-if ( num2.Length > 2)
-{
-  Console.WriteLine("Figure № 3 -> " + num2[2]);
-}
-else
-{
-  Console.WriteLine("There are no numbers");
-}*/
+// Console.WriteLine("Input number");
+// int num = Convert.ToInt32(Console.ReadLine());
+// string num2 = Convert.ToString(num);                // создали переменную num2 типа строки и присвоили ей значение введенного числа
+// if ( num2.Length > 2)                               // обращаемся к длинне переменной num2, если длинна больше 3 (индекс2 )                 
+// {
+//   Console.WriteLine("Figure № 3 -> " + num2[2]);    // то выводим третий элемент с индексом 2
+// }
+// else
+// {
+//   Console.WriteLine("There are no numbers");
+// }
 
+// // решение с помощью метода
 
 // void Num(int num)
 // {

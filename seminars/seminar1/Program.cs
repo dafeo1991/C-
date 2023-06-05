@@ -1,8 +1,10 @@
 ﻿// найти квадрат числа
 // Console.WriteLine("Input number");
 // int num = Convert.ToInt32(Console.ReadLine());
-// int quad = num * num; 
+// int quad = num * num;
 // Console.Write($"Quad of {num} -> {quad} ");
+
+
 
 //Напишите программу, которая на вход принимает два числа и проверяет, является ли первое число квадратом второго.
 // Console.WriteLine("Input number 1");
@@ -32,7 +34,7 @@
 //         count++;
 //     }
 // }
-// if (numN < 0)
+// else 
 // {
 //     int count = numN;
 //     while (count <= numN * -1)
@@ -42,14 +44,15 @@
 //     }
 // }
 
-//Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает **последнюю** цифру этого числа.
-/*Console.WriteLine("Input number N");
-int numN = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(numN % 10);*/
+// //Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает **последнюю** цифру этого числа.
+// Console.WriteLine("Input number N");
+// int numN = Convert.ToInt32(Console.ReadLine());
+// Console.WriteLine(numN % 10);
 
 /*Console.WriteLine("Input number N");
 int numN = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(Math.Abs(numN)%10);*/
+
 
 
 
